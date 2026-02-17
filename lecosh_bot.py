@@ -3,7 +3,8 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, CallbackQueryHandler, ContextTypes
 
 # ⚠️ ВСТАВЬ СЮДА СВОЙ ТОКЕН (только в этот файл, никому не показывай)
-TOKEN = "ВСТАВЬ_ТОКЕН_СЮДА"
+import os
+TOKEN = os.environ.get("TOKEN")
 
 logging.basicConfig(level=logging.INFO)
 
